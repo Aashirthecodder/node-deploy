@@ -12,7 +12,7 @@ const path = require("path");
 
 const productRouter = require("./routes/product");
 const userController = require("./routes/user");
-
+//main file
 //body parser
 server.use(express.json());
 server.use(cors());
@@ -29,6 +29,8 @@ async function main() {
   await mongoose.connect(process.env.MongoUrl);
   console.log("database connected");
 }
+
+console.log("aashir");
 
 //--------------------------
 server.listen(8080, () => {
